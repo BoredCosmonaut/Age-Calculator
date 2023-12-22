@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <title>Age calculator app</title>
+</head>
+<body>
+    <section id="card">
+        <div id="form">
+            <div id="names">
+                <h2 id="day" class="name">DAY</h2>
+                <h2 id="month" class="name">MONTH</h2>
+                <h2 id="year" class="name">YEAR</h2>
+            </div>
+            <div id="input-spaces">
+                <input type="text" id="day-input" placeholder="DD" class="input" required maxlength="2">
+                <input type="text" id="month-input" placeholder="MM" class="input" maxlength="2">
+                <input type="text" id="year-input" placeholder="YY" class="input" maxlength="4">
+            </div>
+        </div>
+        <div id="warnings">
+            <p class="warning" id="empty-input">All fields must be filled</p>
+            <p class="warning" id="valid-day">Must be a valid day</p>
+            <p class="warning" id="valid-month">Must be a valid month</p>
+            <p class="warning" id="valid-year">Year must be in the past</p>
+        </div>
+        <hr id="line">
+        <div id="arrow-container">
+            <img src="images/icon-arrow.svg" alt="" id="arrow">
+        </div>
+        <div id="result">
+            <p id="year-result" class="results"><span id="year-amount" class="number">--</span> years</p>
+            <p id="month-result" class="results"><span id="month-amount" class="number">--</span> months</p>
+            <p id="day-result" class="results"><span id="day-amount" class="number">--</span> days</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

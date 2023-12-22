@@ -1,0 +1,225 @@
+/* This bit is for css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Below is where the style begins */
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: hsl(0, 0%, 94%);
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+#card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 10px 150px 10px;
+    margin: 5% auto;
+    background-color: white;
+}
+
+#form {
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#names {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+#day {
+    margin-left: 35px;
+}
+
+#year {
+    margin-left: -25px;
+}
+
+.name {
+    margin-right: 75px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.input {
+    font-weight: 800;
+    width: 30px;
+    padding: 10px 15px 10px 10px;
+    margin-left: 35px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: thin;
+}
+
+.warning {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: red;
+}
+
+#valid-day {
+    display: none;
+}
+
+#valid-month {
+    display: none;
+}
+
+#valid-year {
+    display: none;
+}
+
+#empty-input {
+    display: none;
+}
+
+#line {
+    position: relative;
+    top: 2em;
+    width: 90%;
+}
+
+#arrow-container {
+    position: relative;
+    top: 0.1em;
+    left: 8.5em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: blueviolet;
+}
+
+#arrow {
+    width: 25px;
+    height: 25px;
+}
+
+#arrow:hover {
+    cursor: pointer;
+}
+
+#result {
+    position: relative;
+    padding-top: 20px;
+    padding-left: 35px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.number {
+    margin-right: 5px;
+    color: hsl(259, 100%, 65%);
+}
+
+.results {
+    margin-bottom: 5px;
+}
+
+#day-result {
+    margin-bottom: 40px;
+}
+
+@media(min-width: 500px) {
+    #card {
+        width: 550px;
+    }
+
+    #form {
+        padding-left: 5px;
+    }
+
+    .name {
+        margin-right: 8em;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .input {
+        width: 75px;
+    }
+
+    .warning {
+        text-align: left;
+        margin-left: 3em;
+        font-size: 15px;
+    }
+
+    #arrow-container {
+        top: -10px;
+        left: 29em;
+        width: 75px;
+        height: 75px;
+        transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    #arrow-container:hover {
+        top: -13px;
+    }
+
+    #arrow {
+        width: 50px;
+        height: 50px;
+    }
+
+    #result {
+        padding-left: 50px;
+        font-size: 70px;
+    }
+}
